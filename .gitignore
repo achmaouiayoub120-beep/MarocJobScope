@@ -47,6 +47,9 @@ storybook-static/
 playwright-report/
 test-results/
 
+# Raw fixtures may contain recruiter PII; keep them local.
+tests/fixtures/*.jsonl
+
 
 data/
 datasets/
