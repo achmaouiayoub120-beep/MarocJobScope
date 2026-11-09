@@ -60,6 +60,7 @@ Route (app)                              Size     First Load JS
 ### Dépôt distant (GitHub)
 - Remote configuré : `https://github.com/achmaouiayoub120-beep/MarocJobScope.git`
 - Branche `main` synchronisée et poussée avec succès (`origin/main`).
+- Scripts de démarrage ajoutés : `start.bat`, `start.ps1`, `start.sh` et `README.md`.
 
 ### Commande pour relancer le site
 ```powershell
