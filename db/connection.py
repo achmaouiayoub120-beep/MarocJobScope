@@ -28,11 +28,20 @@ except (TypeError, ValueError) as exc:
 if not 0 < DB_PORT < 65536:
     raise RuntimeError("DB_PORT must be between 1 and 65535.")
 
+DB_HOST = os.getenv("DB_HOST")
+DB_PASSWORD = os.getenv("DB_PASSWORD") or ""
+LOCAL_HOSTS = ("localhost", "127.0.0.1")
+
+if not DB_PASSWORD and DB_HOST.strip().lower() not in LOCAL_HOSTS:
+    raise RuntimeError(
+        "DB_PASSWORD must be set when DB_HOST is neither localhost nor 127.0.0.1."
+    )
+
 DATABASE_URL = URL.create(
     "postgresql+psycopg",
     username=os.getenv("DB_USER"),
-    password=os.getenv("DB_PASSWORD") or "",
-    host=os.getenv("DB_HOST"),
+    password=DB_PASSWORD,
+    host=DB_HOST,
     port=DB_PORT,
     database=os.getenv("DB_NAME"),
 )

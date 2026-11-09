@@ -1,0 +1,137 @@
+version: 1
+cities:
+  - slug: casablanca
+    region: Casablanca-Settat
+    lat: 33.5731
+    lng: -7.5898
+    names:
+      fr: Casablanca
+      en: Casablanca
+      ar: الدار البيضاء
+    aliases:
+      - casa
+      - dar el beida
+      - dar elbaida
+
+  - slug: rabat
+    region: Rabat-Salé-Kénitra
+    lat: 34.0209
+    lng: -6.8416
+    names:
+      fr: Rabat
+      en: Rabat
+      ar: الرباط
+    aliases:
+      - rabat
+
+  - slug: marrakech
+    region: Marrakech-Safi
+    lat: 31.6295
+    lng: -7.9811
+    names:
+      fr: Marrakech
+      en: Marrakesh
+      ar: مراكش
+    aliases:
+      - marrakesh
+
+  - slug: tanger
+    region: Tanger-Tétouan-Al Hoceïma
+    lat: 35.7595
+    lng: -5.8340
+    names:
+      fr: Tanger
+      en: Tangier
+      ar: طنجة
+    aliases:
+      - tangier
+
+  - slug: fes
+    region: Fès-Meknès
+    lat: 34.0331
+    lng: -5.0003
+    names:
+      fr: Fès
+      en: Fez
+      ar: فاس
+    aliases:
+      - fez
+      - fes
+
+  - slug: agadir
+    region: Souss-Massa
+    lat: 30.4278
+    lng: -9.5981
+    names:
+      fr: Agadir
+      en: Agadir
+      ar: أكادير
+    aliases:
+      - agadir
+
+  - slug: meknes
+    region: Fès-Meknès
+    lat: 33.8935
+    lng: -5.5473
+    names:
+      fr: Meknès
+      en: Meknes
+      ar: مكناس
+    aliases:
+      - meknes
+
+  - slug: oujda
+    region: Oriental
+    lat: 34.6814
+    lng: -1.9086
+    names:
+      fr: Oujda
+      en: Oujda
+      ar: وجدة
+    aliases:
+      - oujda
+
+  - slug: kenitra
+    region: Rabat-Salé-Kénitra
+    lat: 34.2610
+    lng: -6.5802
+    names:
+      fr: Kénitra
+      en: Kenitra
+      ar: القنيطرة
+    aliases:
+      - kenitra
+
+  - slug: tetouan
+    region: Tanger-Tétouan-Al Hoceïma
+    lat: 35.5785
+    lng: -5.3684
+    names:
+      fr: Tétouan
+      en: Tetouan
+      ar: تطوان
+    aliases:
+      - tetouan
+
+  - slug: sale
+    region: Rabat-Salé-Kénitra
+    lat: 34.0531
+    lng: -6.7985
+    names:
+      fr: Salé
+      en: Sale
+      ar: سلا
+    aliases:
+      - sale
+
+  - slug: el_jadida
+    region: Casablanca-Settat
+    lat: 33.2316
+    lng: -8.5007
+    names:
+      fr: El Jadida
+      en: El Jadida
+      ar: الجديدة
+    aliases:
+      - eljadida
+      - mazagan

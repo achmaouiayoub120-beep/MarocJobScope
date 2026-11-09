@@ -1,0 +1,227 @@
+version: 1
+
+metadata:
+  provisional_categories:
+    - sectors
+    - functions
+
+contract_types:
+  - slug: cdi
+    label_fr: CDI
+    label_en: Permanent contract
+  - slug: cdd
+    label_fr: CDD
+    label_en: Fixed-term contract
+  - slug: stage
+    label_fr: Stage
+    label_en: Internship
+  - slug: alternance
+    label_fr: Alternance
+    label_en: Apprenticeship
+  - slug: freelance
+    label_fr: Freelance
+    label_en: Freelance
+  - slug: interimaire
+    label_fr: Intérim
+    label_en: Temporary work
+  - slug: concours
+    label_fr: Concours
+    label_en: Public competition
+  - slug: inconnu
+    label_fr: Non spécifié
+    label_en: Unspecified
+
+experience_levels:
+  - slug: debutant
+    label_fr: Débutant
+    label_en: Entry level
+    min_years: 0
+    max_years: 1
+  - slug: junior
+    label_fr: Junior
+    label_en: Junior
+    min_years: 1
+    max_years: 2
+  - slug: confirme
+    label_fr: Confirmé
+    label_en: Mid-level
+    min_years: 3
+    max_years: 5
+  - slug: senior
+    label_fr: Senior
+    label_en: Senior
+    min_years: 6
+    max_years: 9
+  - slug: expert
+    label_fr: Expert
+    label_en: Expert
+    min_years: 10
+    max_years: null
+  - slug: inconnu
+    label_fr: Non spécifié
+    label_en: Unspecified
+    min_years: null
+    max_years: null
+
+study_levels:
+  - slug: sans_diplome
+    label_fr: Sans diplôme
+    label_en: No degree
+  - slug: bac
+    label_fr: Baccalauréat
+    label_en: High school diploma
+  - slug: bac2
+    label_fr: Bac+2
+    label_en: Two years of higher education
+  - slug: bac3_licence
+    label_fr: Bac+3 (Licence)
+    label_en: Bachelor's degree
+  - slug: bac5_master
+    label_fr: Bac+5 (Master)
+    label_en: Master's degree
+  - slug: doctorat
+    label_fr: Doctorat
+    label_en: Doctorate
+  - slug: inconnu
+    label_fr: Non spécifié
+    label_en: Unspecified
+
+work_modes:
+  - slug: presentiel
+    label_fr: Présentiel
+    label_en: On-site
+  - slug: hybride
+    label_fr: Hybride
+    label_en: Hybrid
+  - slug: teletravail
+    label_fr: Télétravail
+    label_en: Remote
+  - slug: inconnu
+    label_fr: Non spécifié
+    label_en: Unspecified
+
+# PROVISOIRE - a consolider avec les payloads reels.
+sectors:
+  - slug: it_telecom
+    label_fr: IT & Télécom
+    label_en: IT & Telecom
+  - slug: finance_banque
+    label_fr: Finance & Banque
+    label_en: Banking & Finance
+  - slug: assurance
+    label_fr: Assurance
+    label_en: Insurance
+  - slug: commerce_distribution
+    label_fr: Commerce & Distribution
+    label_en: Retail & Distribution
+  - slug: industrie
+    label_fr: Industrie
+    label_en: Industry
+  - slug: btp_construction
+    label_fr: BTP & Construction
+    label_en: Construction
+  - slug: sante
+    label_fr: Santé
+    label_en: Healthcare
+  - slug: education_formation
+    label_fr: Éducation & Formation
+    label_en: Education & Training
+  - slug: transport_logistique
+    label_fr: Transport & Logistique
+    label_en: Transport & Logistics
+  - slug: tourisme_hotellerie
+    label_fr: Tourisme & Hôtellerie
+    label_en: Tourism & Hospitality
+  - slug: agroalimentaire
+    label_fr: Agroalimentaire
+    label_en: Food processing
+  - slug: energie_environnement
+    label_fr: Énergie & Environnement
+    label_en: Energy & Environment
+  - slug: services_entreprises
+    label_fr: Services aux entreprises
+    label_en: Business services
+  - slug: administration_publique
+    label_fr: Administration publique
+    label_en: Public administration
+  - slug: marketing_communication
+    label_fr: Marketing & Communication
+    label_en: Marketing & Communication
+  - slug: ressources_humaines
+    label_fr: Ressources humaines
+    label_en: Human resources
+  - slug: juridique
+    label_fr: Juridique
+    label_en: Legal
+  - slug: autre
+    label_fr: Autre
+    label_en: Other
+
+# PROVISOIRE - a consolider avec les payloads reels.
+functions:
+  - slug: developpement
+    label_fr: Développement
+    label_en: Software development
+  - slug: data
+    label_fr: Data
+    label_en: Data
+  - slug: infrastructure_devops
+    label_fr: Infrastructure & DevOps
+    label_en: Infrastructure & DevOps
+  - slug: support_it
+    label_fr: Support IT
+    label_en: IT support
+  - slug: gestion_projet
+    label_fr: Gestion de projet
+    label_en: Project management
+  - slug: product_design
+    label_fr: Produit & Design
+    label_en: Product & Design
+  - slug: ventes
+    label_fr: Ventes
+    label_en: Sales
+  - slug: marketing
+    label_fr: Marketing
+    label_en: Marketing
+  - slug: communication
+    label_fr: Communication
+    label_en: Communication
+  - slug: finance_comptabilite
+    label_fr: Finance & Comptabilité
+    label_en: Finance & Accounting
+  - slug: audit_controle
+    label_fr: Audit & Contrôle
+    label_en: Audit & Control
+  - slug: ressources_humaines
+    label_fr: Ressources humaines
+    label_en: Human resources
+  - slug: juridique
+    label_fr: Juridique
+    label_en: Legal
+  - slug: logistique_achats
+    label_fr: Logistique & Achats
+    label_en: Logistics & Procurement
+  - slug: production_maintenance
+    label_fr: Production & Maintenance
+    label_en: Production & Maintenance
+  - slug: qualite_hse
+    label_fr: Qualité & HSE
+    label_en: Quality & HSE
+  - slug: sante_soins
+    label_fr: Santé & Soins
+    label_en: Healthcare & Care
+  - slug: enseignement
+    label_fr: Enseignement
+    label_en: Teaching
+  - slug: relation_client
+    label_fr: Relation client
+    label_en: Customer service
+  - slug: administration
+    label_fr: Administration
+    label_en: Administration
+  - slug: direction
+    label_fr: Direction
+    label_en: Executive management
+  - slug: autre
+    label_fr: Autre
+    label_en: Other
