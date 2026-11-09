@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --night: #0b1020;
+  --majorelle: #6050dc;
+  --safran: #e9a93b;
+  --terracotta: #c8603c;
+  --sand: #e8dcc4;
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--night);
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: clip;
+  background:
+    radial-gradient(80% 50% at 12% -10%, rgba(96, 80, 220, 0.22), transparent 62%),
+    radial-gradient(55% 40% at 92% 0%, rgba(200, 96, 60, 0.12), transparent 62%),
+    var(--night);
+  color: var(--sand);
+  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(96, 80, 220, 0.5);
+  color: #ffffff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--safran);
+  outline-offset: 3px;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(232, 220, 196, 0.22) transparent;
+}
+
+@layer components {
+  .section-shell {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .glass {
+    @apply border border-sand/10 bg-white/[0.035] shadow-card backdrop-blur-xl;
+  }
+
+  .glass-soft {
+    @apply border border-sand/[0.07] bg-white/[0.02] backdrop-blur-md;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-[11px] font-medium uppercase tracking-[0.22em] text-safran/90;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-majorelle px-5 py-3 text-sm font-semibold text-white shadow-glow transition duration-300 hover:-translate-y-0.5 hover:bg-[#6f61e4] active:translate-y-0;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-sand/15 bg-white/[0.03] px-5 py-3 text-sm font-medium text-sand/90 transition duration-300 hover:border-safran/40 hover:bg-white/[0.06] hover:text-sand;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-sand/10 bg-white/[0.04] px-2.5 py-1 text-[11px] font-medium text-sand/70;
+  }
+
+  .skeleton {
+    position: relative;
+    overflow: hidden;
+    background: rgba(232, 220, 196, 0.055);
+  }
+
+  .skeleton::after {
+    position: absolute;
+    inset: 0;
+    content: "";
+    transform: translateX(-100%);
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(232, 220, 196, 0.08),
+      transparent
+    );
+    animation: shimmer 1.7s infinite;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .zellige-mask {
+    mask-image: radial-gradient(72% 72% at 50% 42%, #000 10%, transparent 100%);
+  }
+
+  .grain {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.42'/%3E%3C/svg%3E");
+    background-size: 180px 180px;
+  }
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .skeleton::after {
+    display: none;
+  }
+}
