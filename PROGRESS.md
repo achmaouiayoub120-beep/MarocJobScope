@@ -57,6 +57,10 @@ Route (app)                              Size     First Load JS
 - Page `/pipeline` : n'existe pas
 - Aucun scraping lancé (interdit par les règles)
 
+### Dépôt distant (GitHub)
+- Remote configuré : `https://github.com/achmaouiayoub120-beep/MarocJobScope.git`
+- Branche `main` synchronisée et poussée avec succès (`origin/main`).
+
 ### Commande pour relancer le site
 ```powershell
 cd C:\Users\ayoub\Downloads\gestion_agile-main\apps\web
